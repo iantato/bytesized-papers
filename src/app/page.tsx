@@ -1,22 +1,28 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 text-black py-10 px-30 flex flex-col justify-between">
+    <div className="min-h-screen bg-gray-100 text-black py-10 px-30 flex flex-col justify-between items-center">
 
       {/* Navigation Bar */}
-      <nav className="mb-8 flex flex-row items-center justify-between ">
+      <nav className="mb-8 flex flex-row items-center justify-between w-full">
         <h1 className="text-2xl font-bold self-stretch">ByteSized Papers</h1>
         <div className="space-x-10 flex items-center">
-          <Button className="align-bottom hover:bg-gray-200 cursor-pointer" variant="ghost">contact</Button>
-          <Button className="align-bottom hover:bg-gray-200 cursor-pointer" variant="ghost">support</Button>
-          <Button className="w-9 bi bi-github text-[20px] hover:bg-gray-200 rounded-4xl cursor-pointer" variant="ghost"></Button>
-          <Button className="w-9 bi bi-linkedin text-[20px] hover:bg-gray-200 rounded-4xl cursor-pointer" variant="ghost"></Button>
+          <Button className="align-bottom cursor-pointer" variant="ghost">contact</Button>
+          <Button className="align-bottom cursor-pointer" variant="ghost">support</Button>
+          <Button className="w-9 bi bi-github text-[20px] rounded-4xl" variant="ghost"></Button>
+          <Button className="w-9 bi bi-linkedin text-[20px] rounded-4xl" variant="ghost"></Button>
         </div>
       </nav>
 
+      <div className="text-center m-10 w-5xl">
+        <p>A website dedicated to showcasing research papers, program documentation, and technical papers—written by <b>Christian Mark P. Francisco</b>—related to computer science.</p>
+        <Input type="search" placeholder="Search papers..." className="mt-4 mx-auto"/>
+      </div>
+
       {/* Content Section */}
-      <main>
+      <main className="grow">
 
       </main>
 
